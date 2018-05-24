@@ -82,7 +82,7 @@ easy_install scrapy
 
 
 
-###■ Scrapy를 설치하기 위해 필요한 기타 패키지 설치
+### ■ Scrapy를 설치하기 위해 필요한 기타 패키지 설치
 
 http://slproweb.com/products/Win32OpenSSL.html 에서 win32OpenSSL과 Visual C++ 2008 redistributables을 다운받아 실행한다. 주의할 점은 OpenSSL lite를 받으면 안된다는 것이다. 또한 bin file은 OpenSSL 로컬 폴더에 설치해야 한다. 이후 C:\openssl-win32\bin을 환경변수에 추가한다. 다음으로 필요한 패키지들을 설치해 준다. 필요한 패키지와 다운로드 주소는 다음과 같다. 해당 링크를 다운로드한 후에 윈도우에서 실행한다. 
 
