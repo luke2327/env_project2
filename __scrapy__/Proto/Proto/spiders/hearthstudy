@@ -1,0 +1,2535 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>하스스톤 스터디 - 하스스터디</title>
+<meta name="description" content="하스스톤 덱 파워랭킹 5월 3주차 순위 선술집난투 티어 마녀숲 카드 갤러리 코드 시뮬레이터 스터디">
+<link rel="canonical" href="https://www.hearthstudy.com"/>
+    <meta property="og:description" content="하스스톤 덱 파워랭킹 5월 3주차 순위 선술집난투 티어 마녀숲 카드 갤러리 코드 시뮬레이터 스터디" />
+<meta property="og:title" content="하스스톤 스터디 - 하스스터디" />
+<meta property="og:url" content="https://www.hearthstudy.com" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Hearthstone Study" />
+<meta property="og:image" content="https://i.imgur.com/qvP85Jp.png" />
+
+    <meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@hearthstudy" />
+<meta name="twitter:title" content="하스스톤 스터디 - 하스스터디" />
+
+    <meta name="sitemap" content="https://www.hearthstudy.com/hstudy_sitemap.xml" />
+    <meta name="csrf-token" content="IsbSgnOmyM5mta8XmqtiL6Gt0pZ6z8tu5HbZTNVT">
+    <script>
+    window.Laravel = {"csrfToken":"IsbSgnOmyM5mta8XmqtiL6Gt0pZ6z8tu5HbZTNVT"}
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet" type="text/css">
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/ripples.min.css">
+
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.hearthstudy.com/css/rateit.css">
+
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hearthstudy.css?ver=1.1.4">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.class.css?ver=1.1.5">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.deck.css?ver=1.1.1">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.nav.css?ver=1.1.0">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.login.css">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.twit.css">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.ad.css?ver=1.1.1">
+    <link rel="stylesheet" type="text/css" href="https://www.hearthstudy.com/css/hs.comm.css?ver=1.1.1">
+
+    <style>
+    .hero-image { background-image: url("https://www.hearthstudy.com/images/bg/hstudy (50).jpg"); }
+    .twit-feed { background-image: url('https://www.hearthstudy.com/img/mammoth_bg.jpg'); }
+
+.r_cardimg {
+    width: 100px;
+}
+
+.rs_cardimg {
+    width: 80px;
+}
+
+/* Non Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .r_cardimg {
+        width: 200px;
+    }
+
+    .rs_cardimg {
+        width: 160px;
+    }
+}
+.icon-circle {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input#writer {
+    width: 80%;
+}
+
+@keyframes  copy-done {
+    0% {
+        opacity:1;
+        transform:translateX(-50%) translateY(-25px)
+        }
+    to {
+        opacity:0;transform:translateX(-50%) translateY(-55px)
+        }
+    }
+
+.clipboard .clipboard-copy.notyet {
+    display: none !important;
+}
+
+.clipboard .clipboard-copy {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: copy-done 2s 1;
+}
+
+    </style>
+    <!-- push stylesheets -->
+<style>
+    #forkongithub a {
+        background: #999;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 40px;
+        font-size: 1rem;
+        line-height: 2rem;
+        position: relative;
+        transition: 0.5s;
+    }
+    #forkongithub a:hover {
+        background: #c11;
+        color: #fff;
+    }
+    #forkongithub a::before,
+    #forkongithub a::after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 1px;
+        background: #fff;
+    }
+    #forkongithub a::after {
+        bottom: 1px;
+        top: auto;
+    }
+    #forkongithub {
+        position: absolute;
+        display: block;
+        top: 7px;
+        right: 22px;
+        width: 90px;
+        overflow: hidden;
+        height: 90px;
+    }
+    #forkongithub a {
+        width: 200px;
+        position: absolute;
+        top: 20px;
+        right: -70px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+    .deckcover {
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    .blog ul {
+        padding-left: 1em;
+    }
+    .blog ul li {
+        list-style: disc;
+        margin-left: 1em;
+    }
+    .blog a{
+        text-decoration: underline;
+    }
+    .hero-image { background-image: url("https://www.hearthstudy.com/images/bg/hstudy (46).jpg"); }
+
+    .btn.btn-raised.btn-black {
+        background-color: #000;
+        color: #fff;
+    }
+    .pad8 {
+        padding: 8px 8px !important;
+    }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6460319872537646",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+
+<body>
+<div class="app">
+    <div class="hero-image">
+        <div class="hero-overlay">
+<nav id="top-nav" class="navbar navbar-custom navbar-fixed-top navbar-scroll-changed">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-1 col-xs-12">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hs-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                                        <button class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#hs-navbar-collapse-2" aria-expanded="false">
+                        <i class="fa fa-sign-in"></i>
+                    </button>
+                    <!--i type="button" aria-hidden="true" class="fa fa-sign-in navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#hs-navbar-collapse-2" aria-expanded="false"></i-->
+                    <!--a class="navbar-toggle collapsed visible-xs" aria-hidden="true" data-toggle="collapse" data-target="#hs-navbar-collapse-2" aria-expanded="false" href="#"><i class="fa fa-sign-in"></i></a-->
+                                        <a class="navbar-brand" href="/"><span class="sr-only">HearthStudy</span></a>
+                </div>
+                <!--end navbar-header-->
+            </div>
+            <!--end col-md-2 col-sm-2 col-xs-12-->
+            <div class="col-md-10 col-sm-11 col-xs-12" id="hs-navbar-collapse">
+                <div class="navbar-collapse collapse" id="hs-navbar-collapse-1" aria-expanded="true" role="navigation">
+                    <ul class="menu nav navbar-nav navbar-right">
+                        <li class="dropdown ">
+<a href="#" class="" data-toggle="dropdown">RANKING 
+<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+		<li><a href="https://www.hearthstudy.com/ranking/20180520">하스스톤 덱 파워랭킹 2018-05-20
+</a></li>
+		<li><a href="https://www.hearthstudy.com/ranking/20180513">하스스톤 덱 파워랭킹 2018-05-13
+</a></li>
+		<li><a href="https://www.hearthstudy.com/ranking/20180506">하스스톤 덱 파워랭킹 2018-05-06
+<small><span class="commcnt rarity_RARE">[5]</span></small>
+</a></li>
+		<li><a href="https://www.hearthstudy.com/ranking/20180429">하스스톤 덱 파워랭킹 2018-04-29
+<small><span class="commcnt rarity_RARE">[2]</span></small>
+</a></li>
+		<li><a href="https://www.hearthstudy.com/ranking/20180422">하스스톤 덱 파워랭킹 2018-04-22
+<small><span class="commcnt rarity_RARE">[6]</span></small>
+</a></li>
+		<li><a href="https://www.hearthstudy.com/ranking/20180415">하스스톤 덱 파워랭킹 2018-04-15
+<small><span class="commcnt rarity_RARE">[2]</span></small>
+</a></li>
+	</ul>
+</li>
+<li class=""><a href="https://www.hearthstudy.com/stats">STATS
+</a></li>
+<li class=""><a href="https://www.hearthstudy.com/matchup">MATCHUP
+</a></li>
+<li class="dropdown menu-large ">
+<a href="#" class="" data-toggle="dropdown">BOARDS <span class="caret"></span></a>
+<ul class="dropdown-menu megamenu row">
+<li class="col-sm-4">
+<ul>
+<li><a href="https://www.hearthstudy.com/boards" class="btn btn-raised btn-block btn-free">게시판 보기</a></li>
+<li><a href="https://www.hearthstudy.com/article/write" class="btn btn-raised btn-block btn-epic">게시글 등록</a></li>
+<li class="divider"></li>
+<li><a href="https://www.hearthstudy.com/boards/usr">유저 게시판</a></li>
+<li><a href="https://www.hearthstudy.com/boards/hst">관리자 게시판</a></li>
+</ul>
+</li>
+<li class="col-sm-4">
+<ul>
+<li><a href="https://www.hearthstudy.com/contents" class="btn btn-raised btn-block btn-free">포토 콘텐츠 보기</a></li>
+<li><a href="https://www.hearthstudy.com/writecontents" class="btn btn-raised btn-block btn-rare">포토 등록</a></li>
+<li class="divider"></li>
+<li><a href="https://www.hearthstudy.com/esports/12">2018 HCT 아시아 태평양 하계 플레이오프</a></li>
+<li><a href="https://www.hearthstudy.com/esports/11">2018 HCT 아메리카 하계 플레이오프 8강</a></li>
+<li><a href="https://www.hearthstudy.com/esports/10">2018 HCT 유럽 하계 플레이오프 8강</a></li>
+<li><a href="https://www.hearthstudy.com/esports/9">2018 하스스톤 챔피언십 투어 스탑 타이베이</a></li>
+<li><a href="https://www.hearthstudy.com/esports/8">2018 하스스톤 코파 아메리카 추계 시즌</a></li>
+<li><a href="https://www.hearthstudy.com/esports/6">2018 하스스톤 야생 오픈 결선</a></li>
+<li><a href="https://www.hearthstudy.com/esports/7">2018 하스스톤 챔피언십 투어 스탑 오슬로</a></li>
+</ul>
+</li>
+<li class="col-sm-4">
+<ul>
+<li><a href="https://www.hearthstudy.com/share">전적 공유</a></li>
+<li class="divider"></li>
+<li><a href="https://www.hearthstudy.com/esports/5">2018 하스스톤 챔피언십 투어 스탑 방콕</a></li>
+<li><a href="https://www.hearthstudy.com/esports/4">2018 하스스톤 챔피언십 투어 스탑 토론토</a></li>
+<li><a href="https://www.hearthstudy.com/esports/3">2018 하스스톤 챔피언십 투어 스탑 시드니</a></li>
+<li><a href="https://www.hearthstudy.com/esports/2">2018 하스스톤 코파 아메리카 하계 시즌</a></li>
+<li><a href="https://www.hearthstudy.com/esports/1">2018 하스스톤 챔피언십 투어 스탑 독일</a></li>
+</ul>
+</li>
+
+</ul>
+
+
+</li><li class=""><a href="https://www.hearthstudy.com/vod">VOD</a></li> <li class="dropdown menu-large">
+<a href="#" class="" data-toggle="dropdown">CARDS <span class="caret"></span></a>
+<ul class="dropdown-menu megamenu row">
+<form id="menu_search_form" name="menu_search_form" class="hidden-xs">
+<li class="col-sm-12">
+<input type=text id=card_search name=card_search value="" class="form-control" placeholder="카드 이름으로 상세 조회" />
+</li>
+<li class="col-sm-12">
+<button id=Searchcard value="Searchcard" class="btn btn-raised btn-block btn-lg btn-success"><span class="glyphicon glyphicon-search"></span> 카드 검색</button>
+</li>
+<li class="col-sm-12 divider"></li>
+</form>
+<li class="col-sm-4">
+<ul>
+<li class="dropdown-header">직업</li>
+<li><a href="https://www.hearthstudy.com/cards/class/DRUID"><img class="s_rankicon" src="https://www.hearthstudy.com/images/DRUID_icon.png"> 드루이드 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/HUNTER"><img class="s_rankicon" src="https://www.hearthstudy.com/images/HUNTER_icon.png"> 사냥꾼 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/MAGE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/MAGE_icon.png"> 마법사 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/PALADIN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/PALADIN_icon.png"> 성기사 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/PRIEST"><img class="s_rankicon" src="https://www.hearthstudy.com/images/PRIEST_icon.png"> 사제 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/ROGUE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/ROGUE_icon.png"> 도적 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/SHAMAN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> 주술사 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/WARLOCK"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WARLOCK_icon.png"> 흑마법사 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/WARRIOR"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WARRIOR_icon.png"> 전사 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/class/NEUTRAL"><img class="s_rankicon" src="https://www.hearthstudy.com/images/NEUTRAL_icon.png"> 중립 카드</a></li>
+<li class="divider"></li>
+<li class="dropdown-header">카드 종류</li>
+<li><a href="https://www.hearthstudy.com/cards/type/WEAPON">무기 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/type/SPELL">주문 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/type/MINION">하수인 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/type/HERO">영웅 교체 카드</a></li>
+</ul>
+</li>
+<li class="col-sm-4">
+<ul>
+<li class="dropdown-header">정규 세트</li>
+<li><a href="https://www.hearthstudy.com/cards/category/GILNEAS"><img class="s_rankicon" src="https://www.hearthstudy.com/images/GILNEAS_Icon_brown.png"> 마녀숲 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/LOOTAPALOOZA"><img class="s_rankicon" src="https://www.hearthstudy.com/images/LOOTAPALOOZA_Icon_brown.png"> 코볼트 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/ICECROWN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/ICECROWN_Icon_brown.png"> 얼어붙은 왕좌 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/UNGORO"><img class="s_rankicon" src="https://www.hearthstudy.com/images/UNGORO_Icon_brown.png"> 운고로 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/GANGS"><img class="s_rankicon" src="https://www.hearthstudy.com/images/GANGS_Icon_brown.png"> 가젯잔 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/KARA"><img class="s_rankicon" src="https://www.hearthstudy.com/images/KARA_Icon_brown.png"> 카라잔 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/OG"><img class="s_rankicon" src="https://www.hearthstudy.com/images/OG_Icon_brown.png"> 고대 신 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/EXPERT1"><img class="s_rankicon" src="https://www.hearthstudy.com/images/EXPERT1_Icon_brown.png"> 오리지널 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/CORE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/CORE_Icon_brown.png"> 기본 카드</a></li>
+<li class="dropdown-header">야생 세트</li>
+<li><a href="https://www.hearthstudy.com/cards/category/LOE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/LOE_Icon_brown.png"> 탐험가 연맹 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/TGT"><img class="s_rankicon" src="https://www.hearthstudy.com/images/TGT_Icon_brown.png"> 대 마상시합 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/BRM"><img class="s_rankicon" src="https://www.hearthstudy.com/images/BRM_Icon_brown.png"> 검은바위 산 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/GVG"><img class="s_rankicon" src="https://www.hearthstudy.com/images/GVG_Icon_brown.png"> 고블린 대 노움 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/NAXX"><img class="s_rankicon" src="https://www.hearthstudy.com/images/NAXX_Icon_brown.png"> 낙스라마스 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/category/HOF"><img class="s_rankicon" src="https://www.hearthstudy.com/images/HOF_Icon_brown.png"> 명예의 전당 카드</a></li>
+<li class="divider"></li>
+<li><a href="https://www.hearthstudy.com/cards/set/STANDARD"><img class="s_rankicon" src="https://www.hearthstudy.com/images/STANDARD_Icon_brown.png"> 정규 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WILD_Icon_brown.png"> 모든 카드</a></li>
+</ul>
+</li>
+<li class="col-sm-4">
+<ul>
+<li class="dropdown-header">카드 등급</li>
+<li><a href="https://www.hearthstudy.com/cards/rarity/FREE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/gem_FREE.png"> 무료 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/rarity/COMMON"><img class="s_rankicon" src="https://www.hearthstudy.com/images/gem_COMMON.png"> 일반 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/rarity/RARE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/gem_RARE.png"> 희귀 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/rarity/EPIC"><img class="s_rankicon" src="https://www.hearthstudy.com/images/gem_EPIC.png"> 영웅 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/rarity/LEGENDARY"><img class="s_rankicon" src="https://www.hearthstudy.com/images/gem_LEGENDARY.png"> 전설 카드</a></li>
+<li class="divider"></li>
+<li class="dropdown-header">카드 종족</li>
+<li><a href="https://www.hearthstudy.com/cards/race/MECHANICAL">기계 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/MURLOC">멀록 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/DEMON">악마 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/BEAST">야수 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/DRAGON">용족 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/TOTEM">토템 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/PIRATE">해적 카드</a></li>
+<li><a href="https://www.hearthstudy.com/cards/race/ELEMENTAL">정령 카드</a></li>
+</ul>
+</li>
+
+<li class="col-xs-12">
+	<ul>
+		<li class="divider"></li>
+		<li class="text-center"><a href="https://www.hearthstudy.com/card"><i class="fa fa-random" aria-hidden="true"></i> 무작위 카드 조회</a></li>
+	</ul>
+</li>
+
+</ul>
+
+
+</li>
+<li class="hidden-sm"><a href="https://www.hearthstudy.com/expansion/GILNEAS"><img style="margin-bottom: -15px;margin-top: -15px;" class="m_rankicon" src="https://i.imgur.com/qvP85Jp.png" /></a>
+</li> <li class="dropdown menu-large ">
+	<a href="#" class="" data-toggle="dropdown">DECKS <span class="caret"></span>
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a>
+	<ul class="dropdown-menu megamenu row">
+
+<form method="post" action="https://www.hearthstudy.com/decks" accept-charset="UTF-8">
+<li class="col-sm-12">
+<input type=textarea id=menudeck_search name=menudeck_search value="" class="form-control" placeholder="키워드로 덱 검색" />
+<input name="_token" type="hidden" value="IsbSgnOmyM5mta8XmqtiL6Gt0pZ6z8tu5HbZTNVT"/>
+</li>
+<li class="col-sm-12">
+<button type=submit id=searchdeck class="btn btn-raised btn-block btn-lg btn-success"><span class="glyphicon glyphicon-search"></span> 덱 검색</button>
+</li>
+<li class="col-sm-12 divider"></li>
+</form>
+
+		<li class="col-sm-4">
+			<ul>
+				<li><a href="https://www.hearthstudy.com/decklists/DRUID"><img class="s_rankicon" src="https://www.hearthstudy.com/images/DRUID_icon.png"> 드루이드 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/midrange-druid"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_ICC_085.png"> 미드 드루이드</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/spiteful-druid"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_ICC_085.png"> 빅주문 드루이드</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/taunt-druid"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_ICC_835.png"> 도발 드루이드</a></li>
+				<li><a href="https://www.hearthstudy.com/decklists/HUNTER"><img class="s_rankicon" src="https://www.hearthstudy.com/images/HUNTER_icon.png"> 사냥꾼 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/face-hunter"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_EX1_538.png"> 돌진 사냥꾼</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/secret-hunter"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_KAR_006.png"> 비밀 사냥꾼</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/spell-hunter"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_KAR_114.png"> 주문 사냥꾼</a></li>
+				<li><a href="https://www.hearthstudy.com/decklists/MAGE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/MAGE_icon.png"> 마법사 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/big-spell-mage"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_LOOT_535.png"> 빅주문 마법사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/tempo-mage"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_BRM_002.png"> 템포 마법사</a></li>
+			</ul>
+		</li>
+		<li class="col-sm-4">
+			<ul>
+				<li><a href="https://www.hearthstudy.com/decklists/PALADIN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/PALADIN_icon.png"> 성기사 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/even-paladin"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_692.png"> 짝수 성기사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/murloc-paladin"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_CFM_650.png"> 멀록 성기사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/odd-paladin"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"> 홀수 성기사</a></li>
+				<li><a href="https://www.hearthstudy.com/decklists/PRIEST"><img class="s_rankicon" src="https://www.hearthstudy.com/images/PRIEST_icon.png"> 사제 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/combo-priest"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_UNG_034.png"> 콤보 사제</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/control-priest"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_EX1_091.png"> 컨트롤 사제</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/quest-priest"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_UNG_940.png"> 퀘스트 사제</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/spiteful-priest"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_CS1_113.png"> 빅주문 사제</a></li>
+				<li><a href="https://www.hearthstudy.com/decklists/ROGUE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/ROGUE_icon.png"> 도적 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/miracle-rogue"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_EX1_095.png"> 주문 도적</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/odd-rogue"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"> 홀수 도적</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/quest-rogue"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_UNG_067.png"> 퀘스트 도적</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/tempo-rogue"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_CFM_344.png"> 템포 도적</a></li>
+			</ul>
+		</li>
+		<li class="col-sm-4">
+			<ul>
+				<li><a href="https://www.hearthstudy.com/decklists/SHAMAN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> 주술사 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/even-shaman"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_692.png"> 짝수 주술사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/midrange-shaman"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_AT_046.png"> 미드 주술사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/shudderwock-shaman"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_820.png"> 두억시니 주술사</a></li>
+				<li><a href="https://www.hearthstudy.com/decklists/WARLOCK"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WARLOCK_icon.png"> 흑마법사 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/control-warlock"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_EX1_105.png"> 컨트롤 흑마법사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/cube-warlock"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_LOOT_161.png"> 큐브 흑마법사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/zoo-warlock"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_OG_113.png"> 위니 흑마법사</a></li>
+				<li><a href="https://www.hearthstudy.com/decklists/WARRIOR"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WARRIOR_icon.png"> 전사 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+<li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/big-warrior"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_LOOT_380.png"> 빅 전사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/odd-quest-warrior"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"> 홀수 퀘스트 전사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/odd-warrior"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"> 홀수 전사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/quest-warrior"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_UNG_934.png"> 퀘스트 전사</a></li><li style="padding-left: 20px;"><a href="https://www.hearthstudy.com/metadeck/rush-warrior"><img class="s_rankicon" src="https://www.hearthstudy.com/images/small/xs_GIL_547.png"> 속공 전사</a></li>
+			</ul>
+		</li>
+		<li class="col-xs-12">
+			<ul>
+				<li class="divider"></li>
+				<li class="text-center"><a href="https://www.hearthstudy.com/decklists"><img class="s_rankicon" src="https://www.hearthstudy.com/images/NEUTRAL_icon.png"> 전체 덱
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</a></li>
+				<!--<li class="text-center"><a href="https://www.hearthstudy.com/decklists/set/STANDARD">정규 덱 보기(Standard Decks)</a></li>
+				<li class="text-center"><a href="https://www.hearthstudy.com/decklists/set/WILD">야생 덱 보기(Wild Decks)</a></li>
+				-->
+			</ul>
+		</li>
+	</ul>
+</li>
+<li class="dropdown menu-large ">
+<a href="#" class="" data-toggle="dropdown">BUILDER <span class="caret"></span></a>
+	<ul class="dropdown-menu megamenu row">
+<form method="post" action="https://www.hearthstudy.com/deckcodebuild" accept-charset="UTF-8">
+<li class="col-sm-12">
+<input type=textarea id=deckstring name=deckstring value="" class="form-control" placeholder="코드 입력하여 덱 생성" />
+<input name="_token" type="hidden" value="IsbSgnOmyM5mta8XmqtiL6Gt0pZ6z8tu5HbZTNVT"/>
+</li>
+<li class="col-sm-12">
+<button type=submit id=builddeckmenu class="btn btn-raised btn-block btn-lg btn-warning"><span class="glyphicon glyphicon-import"></span> 덱 등록</button>
+</li>
+<li class="col-sm-12 divider"></li>
+</form>
+		<li class="col-sm-4">
+			<ul>
+				<li><a href="https://www.hearthstudy.com/deckbuild/DRUID"><img class="s_rankicon" src="https://www.hearthstudy.com/images/DRUID_icon.png"> 드루이드 덱 생성</a></li>
+				<li><a href="https://www.hearthstudy.com/deckbuild/HUNTER"><img class="s_rankicon" src="https://www.hearthstudy.com/images/HUNTER_icon.png"> 사냥꾼 덱 생성</a></li>
+				<li><a href="https://www.hearthstudy.com/deckbuild/MAGE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/MAGE_icon.png"> 마법사 덱 생성</a></li>
+			</ul>
+		</li>
+		<li class="col-sm-4">
+			<ul>
+				<li><a href="https://www.hearthstudy.com/deckbuild/PALADIN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/PALADIN_icon.png"> 성기사 덱 생성</a></li>
+				<li><a href="https://www.hearthstudy.com/deckbuild/PRIEST"><img class="s_rankicon" src="https://www.hearthstudy.com/images/PRIEST_icon.png"> 사제 덱 생성</a></li>
+				<li><a href="https://www.hearthstudy.com/deckbuild/ROGUE"><img class="s_rankicon" src="https://www.hearthstudy.com/images/ROGUE_icon.png"> 도적 덱 생성</a></li>
+			</ul>
+		</li>
+		<li class="col-sm-4">
+			<ul>
+				<li><a href="https://www.hearthstudy.com/deckbuild/SHAMAN"><img class="s_rankicon" src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> 주술사 덱 생성</a></li>
+				<li><a href="https://www.hearthstudy.com/deckbuild/WARLOCK"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WARLOCK_icon.png"> 흑마법사 덱 생성</a></li>
+				<li><a href="https://www.hearthstudy.com/deckbuild/WARRIOR"><img class="s_rankicon" src="https://www.hearthstudy.com/images/WARRIOR_icon.png"> 전사 덱 생성</a></li>
+			</ul>
+		</li>
+		<li class="col-xs-12">
+			<ul>
+				<li class="divider"></li>
+				<li class="text-center"><a href="https://www.hearthstudy.com/deckbuild"><img class="s_rankicon" src="https://www.hearthstudy.com/images/NEUTRAL_icon.png"> 덱 생성</a></li>
+			</ul>
+		</li>
+	</ul>
+</li>                         <li class="dropdown">
+                            <a class="" data-toggle="dropdown" href="#">LOGIN <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="social_login">
+                                <li>
+                                    <a id="naver_login" href="https://www.hearthstudy.com/auth/naver"><img src="https://www.hearthstudy.com/img/naver_square_36x36.png" alt="Naver Login"> 네이버 계정으로 로그인</a>
+                                </li>
+                                <li>
+                                    <a id="kakao_login" href="https://www.hearthstudy.com/auth/kakao"><img src="https://www.hearthstudy.com/img/kakao_36x36.png" alt="Kakao Login"> 카카오 계정으로 로그인</a>
+                                </li>
+                                <li>
+                                    <a id="facebook_login" href="https://www.hearthstudy.com/auth/facebook"><img src="https://www.hearthstudy.com/img/FB-f-Logo__white_50_.png" alt="facebook Login"> 페이스북 계정으로 로그인</a>
+                                </li>
+                                <li>
+                                    <a id="twitter_login" href="https://www.hearthstudy.com/auth/twitter"><img src="https://www.hearthstudy.com/img/Twitter_Logo_White_On_Blue.png" alt="twitter Login"> 트위터 계정으로 로그인</a>
+                                </li>
+                                <li>
+                                    <a id="google_login" href="https://www.hearthstudy.com/auth/google"><img src="https://www.hearthstudy.com/img/btn_google_signin_light_normal_web_.png" alt="google Login">구글 계정으로 로그인</a>
+                                </li>
+                                <li>
+                                    <a id="battlenet_login" href="https://www.hearthstudy.com/auth/battlenet"><img src="https://www.hearthstudy.com/img/BN.png" alt="battlenet Login">베틀넷 계정으로 로그인</a>
+                                </li>
+                            </ul>
+                        </li>
+                                            </ul>
+                    <!--end menu-->
+                </div>
+                <!--end navbar-collapse-->
+                <div class="navbar-collapse collapse" id="hs-navbar-collapse-2" aria-expanded="true" role="navigation">
+                    <ul class="menu nav navbar-nav navbar-right visible-xs" id="social_login">
+                                                <li>
+                            <a id="naver_login" href="https://www.hearthstudy.com/auth/naver"><img src="https://www.hearthstudy.com/img/naver_square_36x36.png" alt="Naver Login"> 네이버 계정으로 로그인</a>
+                        </li>
+                        <li>
+                            <a id="kakao_login" href="https://www.hearthstudy.com/auth/kakao"><img src="https://www.hearthstudy.com/img/kakao_36x36.png" alt="Kakao Login"> 카카오 계정으로 로그인</a>
+                        </li>
+                        <li>
+                            <a id="facebook_login" href="https://www.hearthstudy.com/auth/facebook"><img src="https://www.hearthstudy.com/img/FB-f-Logo__white_50_.png" alt="facebook Login"> 페이스북 계정으로 로그인</a>
+                        </li>
+                        <li>
+                            <a id="twitter_login" href="https://www.hearthstudy.com/auth/twitter"><img src="https://www.hearthstudy.com/img/Twitter_Logo_White_On_Blue.png" alt="twitter Login"> 트위터 계정으로 로그인</a>
+                        </li>
+                        <li>
+                            <a id="google_login" href="https://www.hearthstudy.com/auth/google"><img src="https://www.hearthstudy.com/img/btn_google_signin_light_normal_web_.png" alt="google Login">구글 계정으로 로그인</a>
+                        </li>
+                        <li>
+                            <a id="battlenet_login" href="https://www.hearthstudy.com/auth/battlenet"><img src="https://www.hearthstudy.com/img/BN.png" alt="battlenet Login">베틀넷 계정으로 로그인</a>
+                        </li>
+                                            </ul>
+                    <!--end menu-->
+                </div>
+            </div>
+            <!--end col-md-10 col-sm-10 col-xs-12-->
+        </div>
+    </div>
+    <!--end container-->
+</nav>        </div>
+    </div>
+
+    <div class="movetodeck">
+        <div class="menu-button">
+            <i class="fa fa-3x fa-chevron-circle-left"></i>
+            <a href="https://www.hearthstudy.com/decks" role="button"><img src="https://www.hearthstudy.com/images/NEUTRAL_icon.png" title="전체 덱" alt="전체 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/WARRIOR" role="button"><img src="https://www.hearthstudy.com/images/WARRIOR_icon.png" title="전사 덱" alt="전사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/WARLOCK" role="button"><img src="https://www.hearthstudy.com/images/WARLOCK_icon.png" title="흑마법사 덱" alt="흑마법사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/SHAMAN" role="button"><img src="https://www.hearthstudy.com/images/SHAMAN_icon.png" title="주술사 덱" alt="주술사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/ROGUE" role="button"><img src="https://www.hearthstudy.com/images/ROGUE_icon.png" title="도적 덱" alt="도적 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/PRIEST" role="button"><img src="https://www.hearthstudy.com/images/PRIEST_icon.png" title="사제 덱" alt="사제 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/PALADIN" role="button"><img src="https://www.hearthstudy.com/images/PALADIN_icon.png" title="성기사 덱" alt="성기사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/MAGE" role="button"><img src="https://www.hearthstudy.com/images/MAGE_icon.png" title="마법사 덱" alt="마법사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/HUNTER" role="button"><img src="https://www.hearthstudy.com/images/HUNTER_icon.png" title="사냥꾼 덱" alt="사냥꾼 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/DRUID" role="button"><img src="https://www.hearthstudy.com/images/DRUID_icon.png" title="드루이드 덱" alt="드루이드 덱"></a>
+        </div>
+    </div>
+    <div class="scrolltotop">
+        <div class="wrapper">
+            <i class="fa fa-3x fa-chevron-circle-up"></i>
+        </div>
+    </div>
+    
+    <section class="bg-white">
+    
+        <div class="rightad">
+	<!-- rightresp -->
+	<ins class="adsbygoogle rightscroll"
+	     data-ad-client="ca-pub-6460319872537646"
+	     data-ad-slot="6579553018"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="leftad">
+	<!-- rightfixed -->
+	<ins class="adsbygoogle leftscroll"
+		 data-ad-client="ca-pub-6460319872537646"
+		 data-ad-slot="3929125015"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div><div class="container" id="hstop">
+    <div class="row">
+        <div class="col-xs-12 hidden">
+            <form id="autocardsearch" name="autocardsearch">
+                <input type=text id=autocompletecardname name=card_search value="" class="form-control" placeholder="카드 이름으로 카드 상세 화면 이동" />
+            </form>
+            <div class="extra-space-s"></div>
+        </div>
+<form method="post" action="https://www.hearthstudy.com/decks" accept-charset="UTF-8">
+        <div class="col-xs-12 visible-xs">
+<input type=textarea id=menudeck_search name=menudeck_search value="" class="form-control" placeholder="키워드로 덱 검색" />
+<input name="_token" type="hidden" value="IsbSgnOmyM5mta8XmqtiL6Gt0pZ6z8tu5HbZTNVT"/>
+        </div>
+        <div class="col-xs-12 visible-xs">
+<button type=submit id=searchdeck class="btn btn-raised btn-block btn-lg btn-success"><span class="glyphicon glyphicon-search"></span> 덱 검색</button>
+            <div class="extra-space-s"></div>
+        </div>
+</form>
+    </div>
+    <div class="row">
+        <div class="owl-carousel owl-theme" id="owldecks">
+            <div class="text-center">
+                <h4><strong>실시간 뉴스 정보</strong></h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/boards/free" class="btn btn-default btn-block btn-raised pad8" role="button">게시판</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="#" pos="whatsnew" class="scrollto btn btn-default btn-block btn-raised pad8" role="button">새소식</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="#" pos="livestream" class="scrollto btn btn-default btn-block btn-raised pad8" role="button">방송 목록</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="#" pos="cslist" class="scrollto btn btn-danger btn-block btn-raised pad8" role="button">최근 유저 덱</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="#" pos="dklist" class="scrollto btn btn-black btn-block btn-raised pad8" role="button">최근 관리자 덱</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="#" pos="hotdeck" class="scrollto btn btn-warning btn-block btn-raised pad8" role="button">인기 덱</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/matchup" class="btn btn-ROGUE btn-block btn-raised pad8" role="button">덱 상성표</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/decklists" class="btn btn-primary btn-block btn-raised pad8" role="button">덱 점유율</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/collection" class="btn btn-MONK btn-block btn-raised pad8" role="button">내 페이지</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/cards/category/LOOTAPALOOZA?sort=class" class="btn btn-DEATHKNIGHT btn-block btn-raised pad8" role="button">코볼트</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/cards/category/ICECROWN?sort=class" class="btn btn-info btn-block btn-raised pad8" role="button">얼어붙은 왕좌</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-4 visible-xs">
+            <a href="https://www.hearthstudy.com/cards/category/UNGORO?sort=class" class="btn btn-success btn-block btn-raised pad8" role="button">운고로</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <a href="https://www.hearthstudy.com/cards/category/GILNEAS?sort=class" class="btn btn-witchwood btn-block btn-raised pad8" role="button">마녀숲 직업별 카드 정보</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <a href="https://www.hearthstudy.com/ranking" class="btn btn-legendary btn-block btn-raised pad8" role="button">최신 하스스톤 덱 파워랭킹 정보</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <a href="https://www.hearthstudy.com/stats" class="btn btn-common btn-block btn-raised pad8" role="button">최신 하스스톤 덱 승률 정보</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <a href="https://www.hearthstudy.com/esports/12" class="btn btn-default btn-block btn-raised pad8" role="button">2018 HCT 아시아 태평양 하계 플레이오프 정보</a>
+            <div class="extra-space-s"></div>
+        </div>
+        <div class="col-xs-6 visible-xs">
+            <a href="https://www.hearthstudy.com/article/write" class="btn btn-raised btn-epic btn-block" role="button">게시글 등록</a>
+        </div>
+        <div class="col-xs-6 visible-xs">
+            <a href="https://www.hearthstudy.com/writecontents" class="btn btn-raised btn-rare btn-block" role="button">포토 등록</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div class="extra-space-s"></div>
+            <h4><strong>직업별 덱 목록 바로가기</strong></h4>
+            <a href="https://www.hearthstudy.com/decks/DRUID" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/DRUID_icon.png" title="드루이드 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/HUNTER" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/HUNTER_icon.png" title="사냥꾼 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/MAGE" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/MAGE_icon.png" title="마법사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/PALADIN" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/PALADIN_icon.png" title="성기사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/PRIEST" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/PRIEST_icon.png" title="사제 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/ROGUE" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/ROGUE_icon.png" title="도적 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/SHAMAN" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/SHAMAN_icon.png" title="주술사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/WARLOCK" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/WARLOCK_icon.png" title="흑마법사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks/WARRIOR" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/WARRIOR_icon.png" title="전사 덱"></a>
+            <a href="https://www.hearthstudy.com/decks" role="button"><img class="r_rankicon" src="https://www.hearthstudy.com/images/NEUTRAL_icon.png" title="전체 덱"></a>
+            <div class="extra-space-l"></div>
+        </div>
+    </div>    <div class="row">
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-sm-push-8">
+
+        <div class="text-center">
+            <h4><strong>최신 덱 정보를 실시간으로 받아보세요!</strong></h4>
+        </div>
+        <div class="extra-space-m"></div>
+        <div class="row">
+            <div class="col-xs-6 text-center">
+                
+<a href="https://twitter.com/hearthstudy?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-xs-6 text-center">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+            <div class="fb-like" data-href="https://www.facebook.com/hearthstone.kr" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+            </div>
+        </div>
+        <div class="extra-space-m"></div>
+<div class="ad_list">
+	<ul>
+		<li>
+			<h4 class="text-center"><strong>Sponsored Links</strong></h4>
+			<p></p>
+		</li>
+		<a href="http://storefarm.naver.com/officeboss" target="_blank">
+		<li>
+			<img class="img-rounded lazy-loaded" data-src="https://i.imgur.com/Wzj6fuK.png">
+			<h4 class="ad_title">부장님 우리 이제 놀러가요!</h4>
+			<p class="ad_footer">직장상사</p>
+		</li>
+		</a>
+	</ul>
+</div>
+<div class="extra-space-s"></div>
+
+<!-- ranking -->
+<!-- power ranking -->
+                <div class="title">
+                    <h3 class=""><strong>하스스톤 덱 파워랭킹</strong><br><small id="recentdate">2018-05-20</small>
+</h3>
+                    <p class="description">Hearthstone Deck Ranking</p>
+                </div>
+                <!--end title-->
+                <div class="bs-callout bs-callout-PALADIN">
+                    <div id='siderank1'>
+                        <h3 class="multidecksview">1티어<small class="pull-right"> [덱 모아보기]</small></h3>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11204" data-metaid="PALADIN_EVEN">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PALADIN_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(1).png" title="1위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_692.png"/> <span class="kometa">짝수기사</span> <small>(Even Paladin)</small> </div></a></div>
+
+                        </div>
+                </div>
+                <div class="extra-space-s"></div>
+                <!-- hsmiddle3 -->
+                <ins class="adsbygoogle" style="display:block"
+                     data-ad-client="ca-pub-6460319872537646"
+                     data-ad-slot="1730551011"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <div class="extra-space-s"></div>
+                <div class="bs-callout bs-callout-PALADIN">
+                    <div id='siderank2'>
+                        <h3 class="multidecksview">2티어<small class="pull-right"> [덱 모아보기]</small></h3>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11205" data-metaid="PALADIN_MURLOC">
+<div class="pull-right">
+<small><span class="text-info"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>3 </span></small>
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PALADIN_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(2).png" title="2위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_AT_076.png"/> <span class="kometa">멀록기사</span> <small>(Murloc Paladin)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11206" data-metaid="DRUID_SPITEFUL">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(3).png" title="3위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_ICC_085.png"/> <span class="kometa">빅주문드루</span> <small>(Spiteful Druid)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11207" data-metaid="WARLOCK_CUBE">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/WARLOCK_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(4).png" title="4위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_LOOT_161.png"/> <span class="kometa">큐브흑마</span> <small>(Cube Warlock)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11208" data-metaid="ROGUE_QUEST">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/ROGUE_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(5).png" title="5위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_UNG_067.png"/> <span class="kometa">퀘스트도적</span> <small>(Quest Rogue)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11209" data-metaid="SHAMAN_EVEN">
+<div class="pull-right">
+<small><span class="text-info"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>2 </span></small>
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/SHAMAN_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(6).png" title="6위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_692.png"/> <span class="kometa">짝수술사</span> <small>(Even Shaman)</small> </div></a></div>
+                        </div>
+                </div>
+                <div class="extra-space-s"></div>
+                <div class="bs-callout bs-callout-PRIEST">
+                    <div id='siderank3'>
+                        <h3 class="multidecksview">3티어<small class="pull-right"> [덱 모아보기]</small></h3>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11210" data-metaid="PRIEST_CONTROL">
+<div class="pull-right">
+<small><span class="text-info"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>1 </span></small>
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(7).png" title="7위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_091.png"/> <span class="kometa">컨트롤사제</span> <small>(Control Priest)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11211" data-metaid="PALADIN_ODD">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PALADIN_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(8).png" title="8위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"/> <span class="kometa">홀수기사</span> <small>(Odd Paladin)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11212" data-metaid="PALADIN_SECRET">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PALADIN_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(9).png" title="9위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_AT_079.png"/> <span class="kometa">비밀기사</span> <small>(Secret Paladin)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11213" data-metaid="ROGUE_ODD">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/ROGUE_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(10).png" title="10위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"/> <span class="kometa">홀수도적</span> <small>(Odd Rogue)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11214" data-metaid="MAGE_TEMPO">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(11).png" title="11위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_608.png"/> <span class="kometa">템포법사</span> <small>(Tempo Mage)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11215" data-metaid="WARLOCK_CONTROL">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/WARLOCK_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(12).png" title="12위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_105.png"/> <span class="kometa">컨트롤흑마</span> <small>(Control Warlock)</small> </div></a></div>
+                        </div>
+                </div>
+                <div class="extra-space-s"></div>
+                <div class="bs-callout bs-callout-PRIEST">
+                    <div id='siderank4'>
+                        <h3 class="multidecksview">4티어<small class="pull-right"> [덱 모아보기]</small></h3>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11216" data-metaid="PRIEST_QUEST">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(13).png" title="13위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_UNG_940.png"/> <span class="kometa">퀘스트사제</span> <small>(Quest Priest)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11217" data-metaid="ROGUE_MIRACLE">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/ROGUE_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(14).png" title="14위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_095.png"/> <span class="kometa">주문도적</span> <small>(Miracle Rogue)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11218" data-metaid="PRIEST_COMBO">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(15).png" title="15위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_UNG_034.png"/> <span class="kometa">콤보사제</span> <small>(Combo Priest)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11219" data-metaid="PRIEST_SPITEFUL">
+<div class="pull-right">
+<small><span class="text-info"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>2 </span></small>
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(16).png" title="16위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_LOOT_539.png"/> <span class="kometa">빅주문사제</span> <small>(Spiteful Priest)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11220" data-metaid="MAGE_CONTROL">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(17).png" title="17위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_KAR_711.png"/> <span class="kometa">컨트롤법사</span> <small>(Control Mage)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11221" data-metaid="HUNTER_SPELL">
+<div class="pull-right">
+<small><span class="text-info"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>1 </span></small>
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/HUNTER_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(18).png" title="18위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_LOOT_217.png"/> <span class="kometa">주문냥꾼</span> <small>(Spell Hunter)</small> </div></a></div>
+
+
+
+<div class="text-left rankdiv"><a href="https://www.hearthstudy.com/decks/11222" data-metaid="WARRIOR_ODD">
+<div class="pull-right">
+<img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/WARRIOR_icon.png"><img class="m_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/Medal_Ranked(19).png" title="19위"></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_826.png"/> <span class="kometa">홀수전사</span> <small>(Odd Warrior)</small> </div></a></div>
+                        </div>
+                </div>
+                <!--end row-->
+                <div class="extra-space-s"></div>
+                <!-- power ranking -->
+
+<div class="extra-space-m"></div>
+
+<!-- rating -->
+<!-- win rates -->
+                <div class="title">
+                    <h3 class=""><strong>하스스톤 덱 승률</strong><br><small id="recentdate2">2018-05-22</small>
+<img src="https://www.hearthstudy.com/images/new_icon_quest.png" title="new" alt="new" />
+</h3>
+                    <p class="description">Hearthstone Deck Win Rates</p>
+                </div>
+                <!--end title-->
+                <div class="bs-callout bs-callout-PALADIN">
+                    <div id='siderate1'>
+                        <h3 class="">1티어</h3>
+<div class="rankdiv" data-metaid="even-paladin"><a href="https://www.hearthstudy.com/metadeck/even-paladin" data-metaid="even-paladin">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/PALADIN_icon.png"> 55.24</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_692.png"> <span class="kometa">짝수 성기사</span> <small>(Even Paladin)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="spiteful-druid"><a href="https://www.hearthstudy.com/metadeck/spiteful-druid" data-metaid="spiteful-druid">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/DRUID_icon.png"> 54.26</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_ICC_085.png"> <span class="kometa">빅주문 드루이드</span> <small>(Spiteful Druid)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="murloc-paladin"><a href="https://www.hearthstudy.com/metadeck/murloc-paladin" data-metaid="murloc-paladin">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/PALADIN_icon.png"> 54.16</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_CFM_650.png"> <span class="kometa">멀록 성기사</span> <small>(Murloc Paladin)</small></div> 
+</a></div>
+                    </div>
+                </div>
+                <div class="extra-space-s"></div>
+                <!-- hsmiddle -->
+                <ins class="adsbygoogle"
+                     style="display:block;"
+                     data-ad-client="ca-pub-6460319872537646"
+                     data-ad-slot="7822771014"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- hsmiddle 
+                <ins class="adsbygoogle" style="display:block"
+                     data-ad-client="ca-pub-6460319872537646"
+                     data-ad-slot="7822771014"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>-->
+                <div class="extra-space-s"></div>
+                <div class="bs-callout bs-callout-SHAMAN">
+                    <div id='siderate2'>
+                        <h3 class="">2티어</h3>
+<div class="rankdiv" data-metaid="even-shaman"><a href="https://www.hearthstudy.com/metadeck/even-shaman" data-metaid="even-shaman">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/SHAMAN_icon.png"> 52.48</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_692.png"> <span class="kometa">짝수 주술사</span> <small>(Even Shaman)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="odd-paladin"><a href="https://www.hearthstudy.com/metadeck/odd-paladin" data-metaid="odd-paladin">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/PALADIN_icon.png"> 52.46</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_826.png"> <span class="kometa">홀수 성기사</span> <small>(Odd Paladin)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="cube-warlock"><a href="https://www.hearthstudy.com/metadeck/cube-warlock" data-metaid="cube-warlock">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/WARLOCK_icon.png"> 51.90</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_LOOT_161.png"> <span class="kometa">큐브 흑마법사</span> <small>(Cube Warlock)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="odd-rogue"><a href="https://www.hearthstudy.com/metadeck/odd-rogue" data-metaid="odd-rogue">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/ROGUE_icon.png"> 51.06</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_826.png"> <span class="kometa">홀수 도적</span> <small>(Odd Rogue)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="quest-rogue"><a href="https://www.hearthstudy.com/metadeck/quest-rogue" data-metaid="quest-rogue">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/ROGUE_icon.png"> 50.16</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_UNG_067.png"> <span class="kometa">퀘스트 도적</span> <small>(Quest Rogue)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="spiteful-priest"><a href="https://www.hearthstudy.com/metadeck/spiteful-priest" data-metaid="spiteful-priest">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/PRIEST_icon.png"> 50.01</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_CS1_113.png"> <span class="kometa">빅주문 사제</span> <small>(Spiteful Priest)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="tempo-mage"><a href="https://www.hearthstudy.com/metadeck/tempo-mage" data-metaid="tempo-mage">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/MAGE_icon.png"> 50.01</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_BRM_002.png"> <span class="kometa">템포 마법사</span> <small>(Tempo Mage)</small></div> 
+</a></div>
+                    </div>
+                </div>
+                <div class="bs-callout bs-callout-PRIEST">
+                    <div id='siderate3'>
+                        <h3 class="">3티어</h3>
+<div class="rankdiv" data-metaid="control-priest"><a href="https://www.hearthstudy.com/metadeck/control-priest" data-metaid="control-priest">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/PRIEST_icon.png"> 49.98</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_EX1_091.png"> <span class="kometa">컨트롤 사제</span> <small>(Control Priest)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="control-warlock"><a href="https://www.hearthstudy.com/metadeck/control-warlock" data-metaid="control-warlock">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/WARLOCK_icon.png"> 49.02</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_EX1_105.png"> <span class="kometa">컨트롤 흑마법사</span> <small>(Control Warlock)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="quest-warrior"><a href="https://www.hearthstudy.com/metadeck/quest-warrior" data-metaid="quest-warrior">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/WARRIOR_icon.png"> 48.85</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_UNG_934.png"> <span class="kometa">퀘스트 전사</span> <small>(Quest Warrior)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="spell-hunter"><a href="https://www.hearthstudy.com/metadeck/spell-hunter" data-metaid="spell-hunter">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/HUNTER_icon.png"> 48.81</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_KAR_114.png"> <span class="kometa">주문 사냥꾼</span> <small>(Spell Hunter)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="quest-priest"><a href="https://www.hearthstudy.com/metadeck/quest-priest" data-metaid="quest-priest">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/PRIEST_icon.png"> 48.48</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_UNG_940.png"> <span class="kometa">퀘스트 사제</span> <small>(Quest Priest)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="big-spell-mage"><a href="https://www.hearthstudy.com/metadeck/big-spell-mage" data-metaid="big-spell-mage">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/MAGE_icon.png"> 48.39</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_LOOT_535.png"> <span class="kometa">빅주문 마법사</span> <small>(Big-Spell Mage)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="midrange-hunter"><a href="https://www.hearthstudy.com/metadeck/midrange-hunter" data-metaid="midrange-hunter">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/HUNTER_icon.png"> 47.86</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_OG_211.png"> <span class="kometa">미드 사냥꾼</span> <small>(Midrange Hunter)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="odd-warrior"><a href="https://www.hearthstudy.com/metadeck/odd-warrior" data-metaid="odd-warrior">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/WARRIOR_icon.png"> 47.74</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_826.png"> <span class="kometa">홀수 전사</span> <small>(Odd Warrior)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="miracle-rogue"><a href="https://www.hearthstudy.com/metadeck/miracle-rogue" data-metaid="miracle-rogue">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/ROGUE_icon.png"> 47.15</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_EX1_095.png"> <span class="kometa">주문 도적</span> <small>(Miracle Rogue)</small></div> 
+</a></div>
+                    </div>
+                </div>
+                <div class="extra-space-s"></div>
+                <div class="bs-callout bs-callout-SHAMAN">
+                    <div id='siderate4'>
+                        <h3 class="">4티어</h3>
+<div class="rankdiv" data-metaid="elemental-shaman"><a href="https://www.hearthstudy.com/metadeck/elemental-shaman" data-metaid="elemental-shaman">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/SHAMAN_icon.png"> 46.36</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_UNG_211.png"> <span class="kometa">정령 주술사</span> <small>(Elemental Shaman)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="zoo-warlock"><a href="https://www.hearthstudy.com/metadeck/zoo-warlock" data-metaid="zoo-warlock">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/WARLOCK_icon.png"> 45.83</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_OG_113.png"> <span class="kometa">위니 흑마법사</span> <small>(Zoo Warlock)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="taunt-druid"><a href="https://www.hearthstudy.com/metadeck/taunt-druid" data-metaid="taunt-druid">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/DRUID_icon.png"> 44.95</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_ICC_835.png"> <span class="kometa">도발 드루이드</span> <small>(Taunt Druid)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="elemental-mage"><a href="https://www.hearthstudy.com/metadeck/elemental-mage" data-metaid="elemental-mage">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/MAGE_icon.png"> 44.92</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_UNG_021.png"> <span class="kometa">정령 마법사</span> <small>(Elemental Mage)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="odd-hunter"><a href="https://www.hearthstudy.com/metadeck/odd-hunter" data-metaid="odd-hunter">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/HUNTER_icon.png"> 44.27</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_826.png"> <span class="kometa">홀수 사냥꾼</span> <small>(Odd Hunter)</small></div> 
+</a></div>
+<div class="rankdiv" data-metaid="shudderwock-shaman"><a href="https://www.hearthstudy.com/metadeck/shudderwock-shaman" data-metaid="shudderwock-shaman">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="images/SHAMAN_icon.png"> 43.71</div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="images/small/xs_GIL_820.png"> <span class="kometa">두억시니 주술사</span> <small>(Shudderwock Shaman)</small></div> 
+</a></div>
+                    </div>
+                </div>
+                <div class="extra-space-s"></div>
+                <!-- win rates -->
+                
+                <div class="extra-space-s"></div>
+<a href="https://sites.google.com/view/hskr" target="_blank">
+<img class="lazy-loaded" data-src="https://www.hearthstudy.com/img/banner-2.gif" style="width:100%; max-width: 360px;">
+</a>
+                <div class="extra-space-s"></div>
+                    <div class="title">
+                        <h3 class=""><strong>최신 업데이트 정보</strong></h3>
+                        <p class="description">Recent updates</p>
+                    </div>
+                        <div class="bs-callout">
+                        <div id="cslist"><h3>최근 유저 등록 덱</h3>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11318">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> dd</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> dd <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11286">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 케미스트</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"> 미라클사제 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11270">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅁ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> ㅁ <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11269">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅗㅜㅑ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 비밀정령 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11268">
+<div class="transform-right">
+<small><span class="commcnt rarity_RARE">[1]</span></small>
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 케미스트</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 용법사수정 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11267">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 케미스트</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 용법사 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11265">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅗㅜㅑ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 용소환사 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11264">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅗㅜㅑ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 퀘법 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11263">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅗㅜㅑ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 정령이생성됨 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11262">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅗㅜㅑ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> 4500가루법사 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11240">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅇㅇ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"> 퀘스트 원한 노루 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11239">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 화이튼</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"> Alkaiser 멀록법사 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11226">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅇㄴ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png">  2018-05-20 11:46:15 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11225">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 화이튼</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/ROGUE_icon.png"> 멀록도적 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11224">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 화이튼</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"> 멀록드루 <small></small></div> 
+</a></div>
+                        </div>
+                        </div>
+                        <div class="extra-space-s"></div>
+
+                        <div class="bs-callout">
+                        <div id="dklist"><h3>최근 관리자 등록 덱</h3>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11333">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/WARRIOR_icon.png"> 부계키우는사람 전설97위 탈진전사 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11332">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"> casanova 7승2패 전설78위 퀘스트사제 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11331">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/PALADIN_icon.png"> Gann 13승7패 전설3위 홀수기사 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11330">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"> Gann 22승8패 전설3위 도발드루 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11329">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/ROGUE_icon.png"> PapaJason 승률75% 유럽전설180위 홀수도적 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11328">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> StanCifka 전설 짝수술사 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11327">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> languagehacker 전설22위 두억시니술사 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11326">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"> akatsu 52승13패 전설5위 켈레빅주문드루 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11325">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/WARLOCK_icon.png"> sjow 34승18패 전설12위 짝수흑마 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11324">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"> Carly 야생전설3위 토그왜글드루 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11323">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"> m3s 야생리노사제 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11322">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> FreddyB 전설96위 짝수술사 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11321">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/DRUID_icon.png"> doyahhoi 39승13패 전설39위 소집드루 2018년5월 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11320">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/HUNTER_icon.png"> Pymbette 20승3패 4등급-&gt;전설달성 비밀냥꾼 2018년5월 미주 <small></small></div> 
+</a></div>
+
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11319">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"><span class="hidden-xs"> HearthStudy</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/SHAMAN_icon.png"> Snoodyboo 전설102위 두억시니술사 2018년5월 <small></small></div> 
+</a></div>
+                        </div>
+                        </div>
+                        <div class="extra-space-s"></div>
+
+                        <div class="bs-callout">
+                        <div id="cmlist"><h3>최근 유저 게시글</h3>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/451">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> ㅇㅇ</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 덱 이번에 새로 만들었더니 블리자드 고소하고 싶네 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/424">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 하린이</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 항상 잘 이용하고 있습니다. 몇가지 의견드림 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/qna/414">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/img/blizzard-logo.png"><span class="hidden-xs"> 운좋은올빼미#36224</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE">질문</strong> 말리고스 이용한 어썸한덱 추천좀 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/386">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 베르사네</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 안녕하세요 하린입니다. 하스 대회 관해서 질문이요 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/374">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> gmdq89</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 하린이인데 항상잘보고있습니다 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/370">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 124</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 여기가 남의자료 표절하는곳 맞나요? <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/364">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 승리의토템</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 야생 난투 주술사 8승 인증 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/338">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_PALADIN.png"><span class="hidden-xs"> 시로</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/IzaxO5Am.jpg"> <strong class="rarity_RARE">포토</strong> 게임을 시작하지.. <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/article/free/337">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://ssl.pstatic.net/static/pwe/address/img_profile.png"><span class="hidden-xs"> 김동주</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"> <strong class="rarity_RARE"></strong> 제작비용 옆에 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/336">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_WARLOCK.png"><span class="hidden-xs"> 개꿀잼몰카</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/HdauLeCm.png"> <strong class="rarity_RARE">포토</strong> 빛정수ㅅㅅ <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/335">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/img/blizzard-logo.png"><span class="hidden-xs"> 상큼한포카칩#3243</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/BJb6IGim.png"> <strong class="rarity_RARE">포토</strong> 다시 보고 싶읍니다 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/334">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://ssl.pstatic.net/static/pwe/address/img_profile.png"><span class="hidden-xs"> adidas</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/hOWErUXm.png"> <strong class="rarity_RARE">포토</strong> 하스하면서 가장 기대되는 순간 <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/333">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> TEST</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/2opy66Gm.jpg"> <strong class="rarity_RARE">포토</strong> TEST <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/332">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://phinf.pstatic.net/contact/20180208_97/1518074719104SxdER_PNG/avatar_profile.png"><span class="hidden-xs"> leo</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/EjboUWTm.jpg"> <strong class="rarity_RARE">포토</strong> 오늘 로또 사야겠습니다. <small></small></div> 
+</a></div>
+<div class="rankdiv">
+<a href="https://www.hearthstudy.com/contents/photo/331">
+<div class="transform-right">
+<img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/img/blizzard-logo.png"><span class="hidden-xs"> Prometheus#13644</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://i.imgur.com/Sls2HTmm.png"> <strong class="rarity_RARE">포토</strong> 너프전 마지막으로 추억사진 <small></small></div> 
+</a></div>
+                        </div>
+                        </div>
+                        <div class="extra-space-s"></div>
+
+                        <div class="bs-callout">
+                        <div id="cmlist"><h3>최근 댓글</h3>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/455#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 저도 감사ㅋㅋ <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/455#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_ROGUE.png"><span class="hidden-xs"> Django</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 좋은 정보 항상 감사합니다! <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/455#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"><span class="hidden-xs"> 하스스터디</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 승률 정보(h... <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11198#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"
+> <strong class="rarity_RARE">덱</strong> 리네사?? <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11268#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/MAGE_icon.png"
+> <strong class="rarity_RARE">덱</strong> MEDG게 약함 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11198#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/PRIEST_icon.png"
+> <strong class="rarity_RARE">덱</strong> 현실은 선봉대원 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/decks/11189#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/WARLOCK_icon.png"
+> <strong class="rarity_RARE">덱</strong> 악몽의 융합체라는 모든 타입으로 간주되는 하수인이 마녀숲과 함께&nbsp;등장했다. 이 굉장한 카드가 한동안 볼 수 없었던 흑마법사 멀록위니 덱을 되살렸다는 것은 흥미로웠다.... <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/viewarticle.html?class=free&amp;id=451#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/img/blizzard-logo.png"><span class="hidden-xs"> wk1884#3472</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE"></strong> 그런게 아니라 짝수기사에서 너프되는 카드 말고도 다른 카드를 만들었다는 거지 그런건 가루를 못돌려받고... <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/450#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 치유의비 화산으로 대부분 다이김 탈진으로 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/metadeck/murloc-paladin#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_PALADIN.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_CFM_650.png"
+> <strong class="rarity_RARE">덱</strong> 나쁘지 않군 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/450#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 정신분열+황혼파괴자 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/450#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 잔상속공개 은근 좋음! <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/article/news/450#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 5급주차충</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE">뉴스</strong> 2코 2/1 잔상속공개랑 2코 2/2하이에나 괜차늠 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/viewarticle.html?class=free&amp;id=451#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/mana.png"
+> <strong class="rarity_RARE"></strong> ㄴㄴ 어차피 너프되고 나서 카드 뽀개면 가루 돌려줘서 이득임 <small></small></div> 
+</a></div>
+<div class="rankdiv"><a href="https://www.hearthstudy.com/card/GILA_854#commentlist">
+<div class="transform-right"><img class="s_rankicon img-circle lazy-loaded" data-src="https://www.hearthstudy.com/images/profile/profile_DEFAULT.png"><span class="hidden-xs"> 익명</span></div>
+<div class="ellipsis-left"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GILA_854.png"
+textid="GILA_854" category="GILNEAS"
+> <strong class="rarity_RARE">카드</strong> 미녀라더니 존나 못생겼네 <small></small></div> 
+</a></div>
+                        </div>
+                        </div>
+                        <div class="extra-space-s"></div>
+
+
+                        <div class="bs-callout">
+                        <div id="rplist"><h3>최근 평가 카드</h3>
+<div class="rankdiv">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/star8.png"> <span class="rarity_FREE">3 점<span class="hidden-xs"> 부여</span></span>
+</div>
+<div class="ellipsis-left"><a href="https://www.hearthstudy.com/card/CS2_122"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_CS2_122.png" textid="CS2_122" category="CORE"> <span class="rarity_FREE">공격대장</span></a></div> 
+</div>
+<div class="rankdiv">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/star8.png"> <span class="rarity_FREE">5 점<span class="hidden-xs"> 부여</span></span>
+</div>
+<div class="ellipsis-left"><a href="https://www.hearthstudy.com/card/CS2_073"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_CS2_073.png" textid="CS2_073" category="EXPERT1"> <span class="rarity_COMMON">냉혈</span></a></div> 
+</div>
+<div class="rankdiv">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/star8.png"> <span class="rarity_FREE">5 점<span class="hidden-xs"> 부여</span></span>
+</div>
+<div class="ellipsis-left"><a href="https://www.hearthstudy.com/card/AT_032"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_AT_032.png" textid="AT_032" category="TGT"> <span class="rarity_RARE">암거래상</span></a></div> 
+</div>
+<div class="rankdiv">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/star8.png"> <span class="rarity_FREE">5 점<span class="hidden-xs"> 부여</span></span>
+</div>
+<div class="ellipsis-left"><a href="https://www.hearthstudy.com/card/FP1_030"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_FP1_030.png" textid="FP1_030" category="NAXX"> <span class="rarity_LEGENDARY">로데브</span></a></div> 
+</div>
+<div class="rankdiv">
+<div class="transform-right"><img class="s_rankicon lazy-loaded" data-src="https://www.hearthstudy.com/images/star8.png"> <span class="rarity_FREE">5 점<span class="hidden-xs"> 부여</span></span>
+</div>
+<div class="ellipsis-left"><a href="https://www.hearthstudy.com/card/EX1_116"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_116.png" textid="EX1_116" category="EXPERT1"> <span class="rarity_LEGENDARY">리로이 젠킨스</span></a></div> 
+</div>
+                        </div>
+                        </div>
+                        <div class="extra-space-s"></div>
+
+                        <div class="bs-callout">
+                        <div id="rplist"><h3>최근 대체 카드</h3>
+<div class="rankdiv">
+<div class="pull-right"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="https://www.hearthstudy.com/card/EX1_165"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_165.png" textid="EX1_165" category="EXPERT1"></a>
+ <i class="fa fa-thumbs-o-up text-info" aria-hidden="true" title="추천"></i>
+</div>
+<a href="https://www.hearthstudy.com/card/GIL_507">
+<div class="ellipsis-left"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_507.png" textid="GIL_507" category="GILNEAS"> <span class="rarity_RARE">현혹된 수호병</span></div> 
+</a></div>
+<div class="rankdiv">
+<div class="pull-right"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="https://www.hearthstudy.com/card/UNG_072"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_UNG_072.png" textid="UNG_072" category="UNGORO"></a>
+ <i class="fa fa-thumbs-o-up text-info" aria-hidden="true" title="추천"></i>
+</div>
+<a href="https://www.hearthstudy.com/card/UNG_928">
+<div class="ellipsis-left"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_UNG_928.png" textid="UNG_928" category="UNGORO"> <span class="rarity_COMMON">잿멍울 괴물</span></div> 
+</a></div>
+<div class="rankdiv">
+<div class="pull-right"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="https://www.hearthstudy.com/card/EX1_067"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_067.png" textid="EX1_067" category="EXPERT1"></a>
+ <i class="fa fa-thumbs-o-up text-info" aria-hidden="true" title="추천"></i>
+</div>
+<a href="https://www.hearthstudy.com/card/GIL_545">
+<div class="ellipsis-left"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_545.png" textid="GIL_545" category="GILNEAS"> <span class="rarity_COMMON">유령 전투마</span></div> 
+</a></div>
+<div class="rankdiv">
+<div class="pull-right"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="https://www.hearthstudy.com/card/CS2_142"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_CS2_142.png" textid="CS2_142" category="CORE"></a>
+ <i class="fa fa-thumbs-o-up text-info" aria-hidden="true" title="추천"></i>
+</div>
+<a href="https://www.hearthstudy.com/card/EX1_012">
+<div class="ellipsis-left"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_012.png" textid="EX1_012" category="EXPERT1"> <span class="rarity_LEGENDARY">혈법사 탈노스</span></div> 
+</a></div>
+<div class="rankdiv">
+<div class="pull-right"><i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="https://www.hearthstudy.com/card/EX1_043"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_EX1_043.png" textid="EX1_043" category="EXPERT1"></a>
+ <i class="fa fa-thumbs-o-up text-info" aria-hidden="true" title="추천"></i>
+</div>
+<a href="https://www.hearthstudy.com/card/GIL_507">
+<div class="ellipsis-left"><img class="m_rankicon img-circle textcard lazy-loaded" data-src="https://www.hearthstudy.com/images/small/xs_GIL_507.png" textid="GIL_507" category="GILNEAS"> <span class="rarity_RARE">현혹된 수호병</span></div> 
+</a></div>
+                        </div>
+                        </div>
+                        <div class="extra-space-s"></div>
+
+
+        </div>
+            <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+
+
+                <div class="title" id="whatsnew">
+                    <h2 class=""><strong>새소식</strong></h2>
+                    <p class="description">What's New</p>
+                </div>
+                <!--end title-->
+                <div class="extra-space-m"></div>
+                <!-- hstop -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6460319872537646" data-ad-slot="5654848611" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <div class="extra-space-m"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/456">
+                    <strong>복제하고, 붙여넣는다! - 선술집난투 2018년 5월 4주차</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 오늘 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 456 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 0 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://i.imgur.com/II4X543.jpg" style="width: 1021px;"><br></p><p>아제로스의 전설들이 새로운 경기에 참여하기로 결정했습니다. 무작위로 선정된 전설들이 각각 4번 복제되었습니다! 승리를 거머쥐세요!</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/456" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/455">
+                    <strong>11.1.1 패치 1일차 추천 정보 - HSReplay</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"> HearthStudy <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 오늘 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 455 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 3 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://i.imgur.com/oYbjUpc.jpg" style="width: 1021px;"><br></p><p><a href="https://articles.hsreplay.net/2018/05/23/meta-pulse-may-23rd-a-world-upside-down/">https://articles.hsreplay.net/2018/05/23/meta-pulse-may-23rd-a-world-upside-down/</a></p><p><br></p><p>HSReplay에 올라온 11.1.1 패치 1일차 메타 동향 및 승률 상위 5개 덱 정보입니다.</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/455" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/454">
+                    <strong>2018년 5월 23일 밸런스 변경 적용 완료</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 1일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 454 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 0 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/a6/A6WKF5XC8SP11523050382412.jpg" style="width: 100%;"></p><p>HCT 플레이오프 종료 후 예정된 업데이트가 5월 23일 적용되었습니다.</p><p><br></p><p>하스스터디 사이트에서도 변경된 카드 정보가 적용 되었습니다.</p><p>※ 기존 등록된 덱 조회 시 변경된 카드 정보를 꼭 확인하시기 바랍니다.</p><p>&nbsp;<span class="textcard rarity_" category="UNGORO" textid="UNG_067t1"><strong>수정핵</strong></span>&nbsp;<br>&nbsp;<span class="textcard rarity_EPIC" category="LOOTAPALOOZA" textid="LOOT_093"><strong>긴급 소집</strong></span>&nbsp;<br>&nbsp;<span class="textcard rarity_RARE" category="LOOTAPALOOZA" textid="LOOT_306"><strong>지배당한 졸개</strong></span>&nbsp;<br>&nbsp;<span class="textcard rarity_COMMON" category="LOOTAPALOOZA" textid="LOOT_017"><strong>어둠의 서약</strong></span>&nbsp;<br>&nbsp;<span class="textcard rarity_EPIC" category="LOOTAPALOOZA" textid="LOOT_539"><strong>원한 맺힌 소환사</strong></span>&nbsp;<br>&nbsp;<span class="textcard rarity_EPIC" category="LOE" textid="LOE_038"><strong>나가 바다 마녀</strong></span>&nbsp;</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/454" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/453">
+                    <strong>유명 스트리머들과 함께 하스스톤을 즐기세요! (5/21~5/25)</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 3일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 453 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 0 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/p7/P7ATWMSL2T421524229029681.jpg" style="width: 100%;"></p><p><a href="https://playhearthstone.com/ko-kr/blog/21790297/5-21-5-25">https://playhearthstone.com/ko-kr/blog/21790297/5-21-5-25</a></p><p><br></p><p>하스스톤을 즐기는 또 하나의 방법! 유명 스트리머들의 하스스톤 방송을 시청해 보세요!</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/453" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/452">
+                    <strong>흥미로운 하스스톤 덱 탐구 - 5월18일</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://pbs.twimg.com/profile_images/757480836899807232/4ZUdfFsR_normal.jpg"> HearthStudy <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 5일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 452 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 0 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/jz/JZDTYW2P34NL1515719100887.jpg" style="width: 100%;"></p><p><a href="https://playhearthstone.com/en-us/blog/21795070/off-meta-spotlight-may-18-2018">https://playhearthstone.com/en-us/blog/21795070/off-meta-spotlight-may-18-2018</a></p><p><br></p><p><a class="tWARLOCK dontover" href="https://www.hearthstudy.com/decks/11189"><img class="m_rankicon" src="https://www.hearthstudy.com/images/WARLOCK_icon.png">周一信徒 승률62% 중국전설 멀록위니흑마 2018년5월 <img class="s_rankicon" src="https://www.hearthstudy.com/images/RAVENdeck_icon.png" title="정규"> <span class="rarity_FREE">3440</span> <img class="s_rankicon" src="https://www.hearthstudy.com/images/Dust.png"><br></a><a class="tPRIEST dontover" href="https://www.hearthstudy.com/decks/11190"><img class="m_rankicon" src="https://www.hearthstudy.com/images/PRIEST_icon.png">그림자멀록 승률58% 아시아전설 용천정내열사제 2018년5월 <img class="s_rankicon" src="https://www.hearthstudy.com/images/RAVENdeck_icon.png" title="정규"> <span class="rarity_FREE">7320</span> <img class="s_rankicon" src="https://www.hearthstudy.com/images/Dust.png"><br></a><a class="tSHAMAN dontover" href="https://www.hearthstudy.com/decks/11191"><img class="m_rankicon" src="https://www.hearthstudy.com/images/SHAMAN_icon.png">Lightman 유럽전설 헤멧 두억시니술사 2018년5월 <img class="s_rankicon" src="https://www.hearthstudy.com/images/RAVENdeck_icon.png" title="정규"> <span class="rarity_FREE">12840</span> <img class="s_rankicon" src="https://www.hearthstudy.com/images/Dust.png"><br></a></p><p><br></p><p><a href="https://www.hearthstudy.com/multidecks?id=11189,11190,11191"><b>[덱 모아보기]</b></a><br></p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/452" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/esports/12">
+                    <strong>2018 HCT 아시아 태평양 하계 플레이오프</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 5일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 12 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 0 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://i.imgur.com/0W23NVR.png" style="width: 100%;"></p><p>2018 HCT 아시아 태평양 하계 플레이오프가 5월 19,20일에 진행됩니다.</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/esports/12" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/447">
+                    <strong>하스스톤 덱 이미지 저장 버튼 추가 적용 (18-05-15)</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 9일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 447 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 2 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 3 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p>하스스터디 사이트의 기능이 일부 업데이트 되었습니다. (Ver. 18-05-15)</p><p><br></p><p>■ 하스스톤 덱 카드 구성을 이미지로 저장하여 볼 수 있도록 <b>[덱 리스트 다운로드]</b> 버튼을 추가하였습니다.</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/447" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/450">
+                    <strong>2인조 - 정규 - 선술집난투 2018년 5월 3주차</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 7일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 450 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 4 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 2 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://i.imgur.com/sJq3Sne.jpg" style="width: 1021px;"></p><p>서로 가장 잘 어울리는 정규 카드는 과연 무엇일까요? 여관주인에게 2장의 카드를 보여주세요. 그러면 그 2장으로 덱을 만들어줄겁니다!</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/450" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+<article>
+                <div class="title">
+                    <h2 class=""><a href="https://www.hearthstudy.com/article/news/449">
+                    <strong>밸런스 변경 안내 - 2018년 5월</strong></a></h2>
+                    <p class="description">
+<img class="s_rankicon img-circle" src="https://phinf.pstatic.net/contact/20170706_36/14992966339325iblT_PNG/og_logo.png"> 하스스터디 <i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 8일 전 등록 <i class="fa fa-sticky-note-o " aria-hidden="true"></i> 글 번호: 449 <i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i> 댓글: 2 <i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i> 추천: 0 <i class="fa fa-thumbs-o-down" aria-hidden="true" title="신고"></i></span> 신고: 0
+                    </p>
+                </div>
+<p><img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/a6/A6WKF5XC8SP11523050382412.jpg" style="width: 100%;"></p><p><a href="https://playhearthstone.com/ko-kr/blog/21758133/2018-5">https://playhearthstone.com/ko-kr/blog/21758133/2018-5</a></p><p><br></p><p>다가오는 HCT 플레이오프 종료 후 예정된 업데이트에서 다음 카드들이 변경됩니다.</p>
+                <div class="extra-space-m"></div>
+                <a href="https://www.hearthstudy.com/article/news/449" class="btn btn-hstudy btn-block" role="button">상세 내용 보기</a>
+                <div class="extra-space-m"></div>
+</article>
+                <div class="extra-space-s"></div>
+
+
+
+
+
+                <div class="title">
+                    <h2 class=""><strong>인기 덱</strong></h2>
+                    <p class="description">Hot Deck</p>
+                </div>
+                <!--end title-->
+                <div class="row masonrycont" id="hotdeck">
+
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11281">
+<strong>Zeh 10승1패 신병기사 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_PALADIN.png');"><p class="hotdeckname"><strong>Zeh 10승1패 신병기사 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_PALADIN.png);"><p class="hotdeckname"><strong>Zeh 10승1패 신병기사 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11309">
+<strong>11.1.1패치 1일차 추천 승률61.7% 토큰드루 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>오늘 등록 2018-05-24</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_DRUID.png');"><p class="hotdeckname"><strong>11.1.1패치 1일차 추천 승률61.7% 토큰드루 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_DRUID.png);"><p class="hotdeckname"><strong>11.1.1패치 1일차 추천 승률61.7% 토큰드루 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11268">
+<strong>용법사수정</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>1<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>2일 전 등록 2018-05-22</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_MAGE.png');"><p class="hotdeckname"><strong>용법사수정</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_MAGE.png);"><p class="hotdeckname"><strong>용법사수정</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11283">
+<strong>Kolento 전설 도발드루 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_DRUID.png');"><p class="hotdeckname"><strong>Kolento 전설 도발드루 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_DRUID.png);"><p class="hotdeckname"><strong>Kolento 전설 도발드루 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11279">
+<strong>Frodan 15승6패 5-&gt;3등급 홀수컨트롤법사 2018년5월 유럽</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_MAGE.png');"><p class="hotdeckname"><strong>Frodan 15승6패 5-&gt;3등급 홀수컨트롤법사 2018년5월 유럽</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_MAGE.png);"><p class="hotdeckname"><strong>Frodan 15승6패 5-&gt;3등급 홀수컨트롤법사 2018년5월 유럽</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11274">
+<strong>GrayJ 원턴킬법사 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_MAGE.png');"><p class="hotdeckname"><strong>GrayJ 원턴킬법사 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_MAGE.png);"><p class="hotdeckname"><strong>GrayJ 원턴킬법사 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11280">
+<strong>FudoV 전설 켈레템포도적 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_ROGUE.png');"><p class="hotdeckname"><strong>FudoV 전설 켈레템포도적 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_ROGUE.png);"><p class="hotdeckname"><strong>FudoV 전설 켈레템포도적 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11282">
+<strong>Torlk 전설 토큰드루 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_DRUID.png');"><p class="hotdeckname"><strong>Torlk 전설 토큰드루 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_DRUID.png);"><p class="hotdeckname"><strong>Torlk 전설 토큰드루 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 msry">
+            <article>
+
+
+<a href="https://www.hearthstudy.com/deck/11284">
+<strong>Savjz 전설 에메리스 소집냥꾼 2018년5월</strong><br><small class="pull-right"><i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i>1일 전 등록 2018-05-23</small>
+<!--<div class="hotdecktitle" style="background-image: url('http://hearthstudy2.diskn.com/bg/CustomDeck_HUNTER.png');"><p class="hotdeckname"><strong>Savjz 전설 에메리스 소집냥꾼 2018년5월</strong></p></div>
+-->
+
+<div class="hotdecktitle" style="background-image: url(https://www.hearthstudy.com/images/bg/CustomDeck_HUNTER.png);"><p class="hotdeckname"><strong>Savjz 전설 에메리스 소집냥꾼 2018년5월</strong></p></div>
+
+</a>
+</article>
+            </div>
+                </div>
+
+<!-- hsmiddle2
+<ins class="adsbygoogle resp_ad"
+     data-ad-client="ca-pub-6460319872537646"
+     data-ad-slot="9253817815"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <div class="extra-space-s"></div> -->
+
+                <div class="title" id="livestream">
+                    <h2 class=""><strong>국내 인기 방송</strong></h2>
+                    <p class="description">Hot Korean Stream</p>
+                </div>
+                <!--end title-->
+                <div class="row masonrycont" id="kolivestream">
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/flurry1989" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_flurry1989-320x180.jpg" class="serv img-responsive lazy-loaded" /><strong>오늘은 진짜 유럽 전설감 ㅎ(2)</strong>
+<br><small class="pull-right">3651 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/flurry1989/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/262bfb4688af2c15-profile_image-300x300.jpeg" class="s_rankicon lazy-loaded" /--> 플러리 <small>(flurry1989)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/surrenderhs" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_surrenderhs-320x180.jpg" class="serv img-responsive lazy-loaded" /><strong>와! 패치!</strong>
+<br><small class="pull-right">2078 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/surrenderhs/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5e022f4a-7d78-44af-90f0-f9633daafa29-profile_image-300x300.jpg" class="s_rankicon lazy-loaded" /--> 서렌더 <small>(surrenderhs)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/rooftopcat99" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_rooftopcat99-320x180.jpg" class="serv img-responsive lazy-loaded" /><strong>옥냥스톤 (샌드박스 스튜디오에서)</strong>
+<br><small class="pull-right">922 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/rooftopcat99/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/rooftopcat99-profile_image-146bb9aaff1be950-300x300.jpeg" class="s_rankicon lazy-loaded" /--> 옥냥이 <small>(rooftopcat99)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/taesangyun" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_taesangyun-320x180.jpg" class="serv img-responsive lazy-loaded" /><strong>굿모닝</strong>
+<br><small class="pull-right">275 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/taesangyun/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d4dd89f9499842b2-profile_image-300x300.jpeg" class="s_rankicon lazy-loaded" /--> 태상 <small>(taesangyun)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/nadotv" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_nadotv-320x180.jpg" class="serv img-responsive lazy-loaded" /><strong>[나도티비] 민방위 12승투기장 gogo</strong>
+<br><small class="pull-right">41 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/nadotv/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/fe300b62-2bb5-48c6-a5db-9a03bd34f2ea-profile_image-300x300.jpg" class="s_rankicon lazy-loaded" /--> 나도티비 <small>(nadotv)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/sc7958" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_sc7958-320x180.jpg" class="serv img-responsive lazy-loaded" /><strong>설인하❤ 오랜만이에요~</strong>
+<br><small class="pull-right">30 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/sc7958/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/452e8aa35b40b06e-profile_image-300x300.jpeg" class="s_rankicon lazy-loaded" /--> 설인하 <small>(sc7958)</small></div>
+</a>
+</article></div>
+                </div>
+
+<!-- rightresp
+<ins class="adsbygoogle resp_ad"
+     data-ad-client="ca-pub-6460319872537646"
+     data-ad-slot="6579553018"
+     data-ad-format="auto"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
+<div class="extra-space-s"></div>
+
+                <div class="title">
+                    <h2 class=""><strong>전체 인기 방송</strong></h2>
+                    <p class="description">Hot Global Stream</p>
+                </div>
+                <!--end title-->
+                <div class="row masonrycont" id="hslivestream">
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/hsdogdog" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_hsdogdog-320x180.jpg" class="serv img-responsive lazy-loaded" />
+<strong>Dog - lets see what&#039;s good</strong>
+<br><small class="pull-right">21070 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/hsdogdog/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/hsdogdog-profile_image-5550ade194780dfc-300x300.jpeg" class="s_rankicon lazy-loaded" /--> HSdogdog <small>(hsdogdog)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/flurry1989" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_flurry1989-320x180.jpg" class="serv img-responsive lazy-loaded" />
+<strong>오늘은 진짜 유럽 전설감 ㅎ(2)</strong>
+<br><small class="pull-right">3504 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/flurry1989/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/262bfb4688af2c15-profile_image-300x300.jpeg" class="s_rankicon lazy-loaded" /--> 플러리 <small>(flurry1989)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/surrenderhs" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_surrenderhs-320x180.jpg" class="serv img-responsive lazy-loaded" />
+<strong>와! 패치!</strong>
+<br><small class="pull-right">2040 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/surrenderhs/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5e022f4a-7d78-44af-90f0-f9633daafa29-profile_image-300x300.jpg" class="s_rankicon lazy-loaded" /--> 서렌더 <small>(surrenderhs)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/a0z0a0z0" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_a0z0a0z0-320x180.jpg" class="serv img-responsive lazy-loaded" />
+<strong>JT MCweifu  讓身體快點熟悉META</strong>
+<br><small class="pull-right">1162 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/a0z0a0z0/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d1a0281f-8d13-4962-8530-4510384789f1-profile_image-300x300.jpg" class="s_rankicon lazy-loaded" /--> 威傅 <small>(a0z0a0z0)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/tomatosmuchachos" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_tomatosmuchachos-320x180.jpg" class="serv img-responsive lazy-loaded" />
+<strong>ВЫПУСКНОЙ СТРИМ</strong>
+<br><small class="pull-right">1083 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/tomatosmuchachos/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/tomatosmuchachos-profile_image-a18d085991c817a5-300x300.jpeg" class="s_rankicon lazy-loaded" /--> TomatosMuchachos <small>(tomatosmuchachos)</small></div>
+</a>
+</article></div>
+<div class="col-xs-6 col-sm-6 col-md-4 caption msry"><article>
+<a href="https://www.hearthstudy.com/vod/gnumme" target="_self">
+<img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_gnumme-320x180.jpg" class="serv img-responsive lazy-loaded" />
+<strong>Путь новичка в Хартстоуне: https://goo.gl/8jh1d2</strong>
+<br><small class="pull-right">957 명 시청중</small>
+</a>
+<br>
+<a href="https://www.twitch.tv/gnumme/profile" target="_blank">
+<div class="ellipsis-left">
+<!--img src="https://static-cdn.jtvnw.net/jtv_user_pictures/018d334b3925220b-profile_image-300x300.png" class="s_rankicon lazy-loaded" /--> gnumme <small>(gnumme)</small></div>
+</a>
+</article></div>
+                </div>
+
+            </div>
+    </div>
+</div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+        <div class="text-center">
+            <h4><strong>최신 덱 정보를 실시간으로 받아보세요!</strong></h4>
+        </div>
+        <div class="extra-space-m"></div>
+            <div class="col-xs-6 text-center">
+                
+<a href="https://twitter.com/hearthstudy?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-xs-6 text-center">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+            <div class="fb-like" data-href="https://www.facebook.com/hearthstone.kr" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+            </div>
+        <div class="extra-space-l"></div>
+        <div class="text-center">
+<div class="fb-page" data-href="https://www.facebook.com/hearthstone.kr" data-width="320" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hearthstone.kr" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hearthstone.kr">하린이놀이터</a></blockquote></div>
+
+
+</div>
+
+    </section>
+
+    <section class="twit-feed">
+        <div class="twit-feed-wrapper">
+                    </div>
+    </section>
+
+    <footer>
+<div class="container text-center">
+    <div class="icon-circle">
+        <a href="https://blog.naver.com/hearthstudy">
+        <img class="m_rankicon img-circle" src="https://www.hearthstudy.com/img/naver_square_36x36.png" title="네이버블로그로 이동하기" alt="네이버블로그로 이동하기" />
+        </a>
+    </div>
+    <div class="icon-circle">
+        <a href="https://www.facebook.com/hearthstone.kr">
+        <img class="m_rankicon img-circle" src="https://www.hearthstudy.com/img/FB-f-Logo__blue_50.png" title="페이스북페이지로 이동하기" alt="페이스북페이지로 이동하기" />
+        </a>
+    </div>
+    <div class="icon-circle">
+        <a href="https://twitter.com/HearthStudy">
+        <img class="m_rankicon img-circle" src="https://www.hearthstudy.com/img/Twitter_Logo_White_On_Blue.png" title="트위터로 이동하기" alt="트위터로 이동하기" />
+        </a>
+    </div>
+</div>
+<div class="extra-space-m"></div>
+                <div class="container text-center">
+            <p class="text-off-white">하스스톤(HearthStone)을 스터디(Study)하고, 하스스톤으로 스터디를 하는 하스스터디(HearthStudy)입니다.</p>
+            <p class="text-off-white">덱 추천, 덱 순위, 덱 시뮬레이터와 덱 상세 및 카드 정보를 제공합니다. 자유롭게 이용 바랍니다.</p>
+        </div>
+
+        <div class="container text-center">
+            <p class="text-off-white">문의 및 건의사항 있으시면 SNS 또는 <a href="mailto:hearthstudy@naver.com?subject=contact">hearthstudy@naver.com 이메일</a>로 연락 주십시오.</p>
+            <br>
+            <p class="text-off-white">&copy; 2016. <a href="https://www.hearthstudy.com" class="theme-author">HearthStudy.com <img src='https://www.hearthstudy.com/img/hearthstudy-logo-footer.png' class="s_rankicon img-circle" alt="HearthStudy"></a></p>
+            
+            <small><a href="https://www.hearthstudy.com/privacy">Privacy Policy</a></small>
+        </div>
+    </footer>
+    <input type="hidden" name="_token" value="IsbSgnOmyM5mta8XmqtiL6Gt0pZ6z8tu5HbZTNVT">
+</div>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=1.0'></script>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.hearthstudy.com/js/arrive.min.js"></script>
+    <script type="text/javascript" src="https://www.hearthstudy.com/js/ripples.min.js"></script>
+    <script type="text/javascript" src="https://www.hearthstudy.com/js/material.min.js"></script>
+    <script type="text/javascript" src="https://www.hearthstudy.com/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+
+    <script type="text/javascript">
+    var APP_URL = "https:\/\/www.hearthstudy.com";
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $.material.init();
+    
+    $(document).ready(function(){
+        $(".navbar-fixed-top").autoHidingNavbar({
+            // see next for specifications
+        });
+        //$('[data-toggle="tooltip"]').tooltip();
+        $('a[data-toggle="tooltip"]').tooltip({
+           container: 'body'
+        });
+
+        $('[data-toggle="popover"]').popover({html: "true"});
+
+    });
+
+
+    $(window).scroll(function(){
+        var windowpos = $(window).scrollTop();
+        var martop = 70;
+        if ($('#fixedpin1').length){
+            var fixedpintop = $('#fixedpin1').offset().top;
+            var fixedpinbottom = fixedpintop + $('#fixedpin1').height();
+            var rad = $('#pin1');
+
+            if (windowpos + martop >= fixedpinbottom) {
+                rad.css({
+                    position: 'fixed',
+                    top: martop
+                });
+            } else {
+                rad.css({
+                    position: 'relative',
+                    top: 0
+                });
+            }
+        }
+
+        if ($('#fixedpin2').length){
+            var fixedpintop = $('#fixedpin2').offset().top;
+            var fixedpinbottom = fixedpintop + $('#fixedpin2').height();
+            var rad = $('#pin2');
+
+            if (windowpos + martop >= fixedpinbottom) {
+                rad.css({
+                    position: 'fixed',
+                    top: martop
+                });
+            } else {
+                rad.css({
+                    position: 'relative',
+                    top: 0
+                });
+            }
+        }
+
+        if ($(this).scrollTop() > 1024) {
+            //$('.scrolltotop').fadeIn();
+            $('.scrolltotop').show();
+            $('.movetodeck').show();
+        } else {
+            //if ( $(this).scrollTop() == 0 ) { changeMenuImg(); }
+            //$('.scrolltotop').fadeOut();
+            $('.scrolltotop').hide();
+            $('.movetodeck').hide();
+        }
+
+        if ($(this).scrollTop() > 10) {
+            $('#top-nav').addClass('fixed-header');
+        } else {
+            $('#top-nav').removeClass('fixed-header');
+        }
+    });
+
+    // Click event to scroll to top
+    $('.scrolltotop').click(function(){
+        $('html, body').animate({scrollTop : 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+
+    $('.scrollto').click(function(){
+        var pos = $(this).attr("pos");
+        var goTo = $('#'+pos).offset().top;
+        $('html, body').animate({scrollTop : goTo}, 500, 'easeInOutExpo');
+        return false;
+    });
+
+    </script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+    <script type='text/javascript' src="https://www.hearthstudy.com/js/jquery.rateit.js?ver=1.1.1"></script>
+    <script type="text/javascript" src="https://www.hearthstudy.com/js/hs.js?ver=1.1.5"></script>
+    <script type="text/javascript" src="https://www.hearthstudy.com/js/hs.app.js?ver=1.1.2"></script>
+
+    <script type="text/javascript">
+$(document).ready(function () {
+    var cardratearray = [];
+    $('.carvote .rateit').each(function () {
+        cardratearray.push($(this).data('productid'));
+    });
+
+    $.ajax({
+        type: 'POST',
+        url: APP_URL+'/cardsrateview',
+        data: {
+            carray: cardratearray
+        },
+        dataType: 'json',
+        success: function(list) {
+            $.each(list, function () {
+                var ri = $('.carvote .rateit[data-productid="'+this.cardid+'"]');
+
+                ri.rateit();
+                ri.rateit('value',this.rate);
+                ri.attr('data-vote-cnt',this.votecnt);
+                //ri.attr('data-org-value',this.value);
+                //ri.attr('data-rateit-value',this.value);
+                ri.parent().find('.voteinfo').find('span.current-rating')
+                    .find('span.votecnt')
+                    .text(Number(this.votecnt));
+
+                ri.parent().find('.voteinfo').find('span.current-rating')
+                    .find('span.value')
+                    .text(this.rate);
+
+            });
+        },
+        fail: function (result) {
+            alert('Card Vote Error =>');
+        }
+    });
+
+    $('.carvote .rateit').bind('rated', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        var ri = $(this);
+        var productID = ri.data('productid'); 
+        var votecnt = ri.data('vote-cnt');
+        var orgvalue = Number(ri.data('org-value'));
+        var value = Number(ri.rateit('value'));
+        var temp = '';
+
+        $.ajax({
+            url: "https://www.hearthstudy.com/cardvote",
+            type: 'POST',
+            data: {
+                ownid: productID,
+                value: value,
+            },
+            dataType: 'json',
+            success: function (result) {
+                if ( result != 'rate' ) {
+                    ri.rateit('value',orgvalue);
+                    ri.rateit('readonly', true);
+                    //ri.attr('data-content') = "이미 투표를 완료한 카드입니다."
+                    //alert("이미 투표를 완료한 카드입니다.");
+
+                    temp = ri.attr('data-content');
+
+                    ri.attr('data-content','이미 투표를 완료한 카드입니다.');
+
+                    setTimeout(function(){
+                        ri.popover('show');
+                    }, 200);
+                    setTimeout(function(){
+                        ri.popover('hide');
+                    }, 2000);
+                    setTimeout(function(){
+                        ri.attr('data-content', temp);
+                    }, 200);
+                }
+                else {
+                    var resultrate = ((orgvalue*votecnt)+value)/(Number(votecnt)+1);
+
+                    //alert(value+"점 부여하였습니다. 현재 평점은 "+resultrate.toFixed(2)+"점 입니다. 감사합니다.");
+
+                    ri.rateit('readonly', true);
+                    ri.rateit('value',resultrate.toFixed(2));
+
+                    ri.parent().find('.voteinfo').find('span.current-rating')
+                        .find('span.votecnt')
+                        .text(Number(votecnt)+1);
+
+                    ri.parent().find('.voteinfo').find('span.current-rating')
+                        .find('span.value')
+                        .text(resultrate.toFixed(2));
+
+                    //ri.attr('data-content') = "이미 투표를 완료한 카드입니다."
+                    //alert("이미 투표를 완료한 카드입니다.");
+                    ri.attr('data-content',value+"점 부여하였습니다. 현재 평점은 "+resultrate.toFixed(2)+"점, 투표수는 "+(Number(votecnt)+1)+"입니다.");
+
+                    setTimeout(function(){
+                        ri.popover('show');
+                    }, 200);
+                    setTimeout(function(){
+                        ri.popover('hide');
+                    }, 2000);
+
+                }
+            },
+            fail: function (result) {
+                alert('Card Vote Error =>');
+            }
+        });
+    });
+});
+
+$(document).on("click", ".clipboard", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var target = $(this);
+    var ran = Math.floor((Math.random() * 100) + 1);    
+    $('<span class="clipboard-copy no'+ran+' notyet btn btn-xs btn-raised btn-danger">복사</span>').appendTo(target);
+    target.find('.clipboard-copy.no'+ran).removeClass('notyet');
+    setTimeout(function(){
+        target.find('.clipboard-copy.no'+ran).remove();
+    }, 2500);
+});
+    </script>
+<!-- push scripts -->
+<script type="text/javascript" src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://www.hearthstudy.com/js/jquery.plate.js"></script>
+<script type='text/javascript' src="https://www.hearthstudy.com/js/lazyloadxt.js"></script>
+<script type='text/javascript' src="https://www.hearthstudy.com/js/lazyloadxt.bg.min.js"></script>
+<!--script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script-->
+
+<script>
+var owlstr = '';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/456">';
+owlstr += '<strong>복제하고, 붙여넣는다! - 선술집난투 2018년 5월 4주차</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월24일06:00:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/455">';
+owlstr += '<strong>11.1.1 패치 1일차 추천 정보 - HSReplay</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>3<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월24일03:30:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/454">';
+owlstr += '<strong>2018년 5월 23일 밸런스 변경 적용 완료</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월23일10:00:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/453">';
+owlstr += '<strong>유명 스트리머들과 함께 하스스톤을 즐기세요! (5/21~5/25)</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월21일10:30:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/452">';
+owlstr += '<strong>흥미로운 하스스톤 덱 탐구 - 5월18일</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월19일09:30:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/esports/12">';
+owlstr += '<strong>2018 HCT 아시아 태평양 하계 플레이오프</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>0<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월19일00:30:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/447">';
+owlstr += '<strong>하스스톤 덱 이미지 저장 버튼 추가 적용 (18-05-15)</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>3<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>2<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월15일03:30:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/450">';
+owlstr += '<strong>2인조 - 정규 - 선술집난투 2018년 5월 3주차</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>2<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>4<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월17일06:00:00</small></a></div>';
+owlstr += '<div class="text-center">';
+owlstr += '<a href="https://www.hearthstudy.com/article/news/449">';
+owlstr += '<strong>밸런스 변경 안내 - 2018년 5월</strong><br>';
+owlstr += '<small><i class="fa fa-thumbs-o-up" aria-hidden="true" title="추천"></i>0<i class="fa fa-comments-o" aria-hidden="true" title="댓글"></i>2<i class="fa fa-clock-o" aria-hidden="true" title="등록"></i> 05월16일05:00:00</small></a></div>';
+$("#owldecks").append(owlstr);
+
+$('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+});
+$('#autocardsearch').submit(function(event) {
+    /* Stop form from submitting normally */
+    event.preventDefault();
+
+    /* Get from elements values */
+    var values = $('#autocompletecardname').val();
+
+    //showloader();
+    /* for ie */
+    var form = document.createElement('form');
+    var objs;
+    objs = document.createElement('input');
+    objs.setAttribute('type', 'text');
+    objs.setAttribute('name', 'name');
+    objs.setAttribute('value', values);
+    form.appendChild(objs);
+    form.setAttribute('method', 'GET');
+    form.setAttribute('action', APP_URL+"/card/");
+    document.body.appendChild(form);
+    form.submit();
+});
+
+$(function() {
+    $("#autocompletecardname").autocomplete({
+        source: function(request, response) {
+            $.ajax({
+                url: "https://www.hearthstudy.com/autocomplete",
+                dataType: "json",
+                data: {
+                    searchValue: request.term
+                },
+                success: function(json) {
+                    response($.map(json, function(item) {
+                        //return{
+                        //cardname:item.name,
+                        //xvalue:request.term,
+                        //cardid:item.id,
+                        //cardset:item.category
+                        //};
+                        return {
+                            label: item.name,
+                            value: item.name,
+                            id: item.id,
+                            set: item.category,
+                            rarity: item.rarity,
+                            collect: item.collectible,
+                            enus: item.en_name
+                        }
+                    }));
+                }
+            });
+        },
+        focus: function(event, ui) {
+            return false;
+            //event.preventDefault(); // Prevent the default focus behavior.
+            //this.value = ui.item.label;
+        },
+        minLength: 1,
+        select: function(event, ui) {
+            var url = "https://www.hearthstudy.com/card/"+ui.item.id;
+            window.open(url, '_self');
+        }
+    }).data("ui-autocomplete")._renderItem = function(ul, item) {
+        var coltext = '덱 구성 불가 카드';
+        if (item.collect) coltext = '덱 구성 가능 카드';
+        return $("<li class=rarity_" + item.rarity + ">" + item.label + " (" + item.enus + ")</li>").append('<img class="lazy-loaded" data-src="'+APP_URL+'/images/' + item.set + '_Icon_brown.png" width="20" />').append('<small class=rarity_FREE>' + ' ' + coltext + '</small>').appendTo(ul);
+    };
+});
+
+
+$(window).load(function() {
+    $('.masonrycont').masonry({
+        itemSelector: '.msry',
+        columnWidth: '.msry'
+    });
+
+
+    $('.card-element').plate({
+        inverse: false,
+        perspective: 600,
+        maxRotation: 20
+    });
+});
+
+</script>
+
+<script>
+
+        $(window).scroll(function() {
+            var windowpos = $(window).scrollTop();
+            var fpos = $('#hstop').offset();
+            var lad = $('.leftad');
+            var lad2 = $('.rightad');
+
+            if (window.innerWidth >= 1600) {
+                if (windowpos >= fpos.top) {
+                    lad.css({
+                        position: 'fixed',
+                        top: 0
+                    });
+                    lad2.css({
+                        position: 'fixed',
+                        top: 0
+                    });
+                } else {
+                    lad.css({
+                        position: 'absolute',
+                        top: fpos.top
+                    });
+                    lad2.css({
+                        position: 'absolute',
+                        top: fpos.top
+                    });
+                }
+            }
+
+        });
+
+</script>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "b226c02982c2d4";
+wcs_do();
+</script>
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-71860567-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+    Kakao.init('d70dcc6e7c921218f20e63f735ccbdaa');
+</script>
+</body>
+
+</html>
